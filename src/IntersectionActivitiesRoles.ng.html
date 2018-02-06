@@ -1,0 +1,45 @@
+<div ng-controller="cwLayoutAngularCustom" class="cwLayoutAngularCustom cwLayoutAngularCustom-intersection-activities-roles cw-visible">
+	<table class="cw-grid">
+		<thead>
+			<tr class="header">
+				<th class="cw-header cw-row-header cell-activity">{{getNodeName(metadata[0])}}</th>
+				<th class="cw-header cell-role-name">{{getNodeName(metadata[1])}}</th>
+				<th class="cw-header cell-role-raci">RACI</th>
+				<th class="cw-header cell-role-responsibilitiessingle">Responsibilities</th>
+				<th class="cw-header cell-document">{{getNodeName(metadata[2])}}</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat-start="act in data" class="content-row row-activity row-activity-{{act.object_id}}">
+				<td class="cw-header cw-row-header cell-activity cell-activity-{{act.object_id}}" rowspan="{{getMaxRowspan(act.associations[metadata[1]])}}" ng-bind-html="getItemDisplayString(act)"></td>
+				<td class="matrix-intersection-cell" ><div class="cell-role-name cell-role-{{act.associations[metadata[1]][0].object_id}} role-{{act.associations[metadata[1]][0].object_id}}-name" ng-if="act.associations[metadata[1]].length > 0" ng-bind-html="getItemDisplayString(act.associations[metadata[1]][0])"></div></td>
+				<td class="matrix-intersection-cell" ><div class="cell-role-raci cell-role-{{act.associations[metadata[1]][0].object_id}} role-{{act.associations[metadata[1]][0].object_id}}-raci" ng-if="act.associations[metadata[1]].length > 0">
+					<span ng-if="act.associations[metadata[1]][0].iProperties.responsible">R</span>
+					<span ng-if="!act.associations[metadata[1]][0].iProperties.responsible">-</span>
+					<span ng-if="act.associations[metadata[1]][0].iProperties.accountable">A</span>
+					<span ng-if="!act.associations[metadata[1]][0].iProperties.accountable">-</span>
+					<span ng-if="act.associations[metadata[1]][0].iProperties.consulted">C</span>
+					<span ng-if="!act.associations[metadata[1]][0].iProperties.consulted">-</span>
+					<span ng-if="act.associations[metadata[1]][0].iProperties.informed">I</span>
+					<span ng-if="!act.associations[metadata[1]][0].iProperties.informed">-</span>
+				</div></td>
+				<td class="matrix-intersection-cell"><div class="cell-role-responsibilitiessingle cell-role-{{act.associations[metadata[1]][0].object_id}} role-{{act.associations[metadata[1]][0].object_id}}-responsibilitiessingle" ng-if="act.associations[metadata[1]].length > 0">{{act.associations[metadata[1]][0].iProperties.responsibilitiessingle}}</div></td>
+				<td class="matrix-intersection-cell cell-document" rowspan="{{getMaxRowspan(act.associations[metadata[1]])}}" ng-bind-html="htmlData[act.object_id][metadata[2]]"></td>
+			</tr>
+			<tr class="content-row row-activity row-activity-{{act.object_id}}" ng-repeat-end ng-repeat="role in act.associations[metadata[1]].slice(1)">
+				<td class="matrix-intersection-cell"><div class="cell-role-name cell-role-{{role.object_id}} role-{{role.object_id}}-name" ng-bind-html="getItemDisplayString(role)"></div></td>
+				<td class="matrix-intersection-cell"><div class="cell-role-raci cell-role-{{role.object_id}} role-{{role.object_id}}-raci">
+					<span ng-if="role.iProperties.responsible">R</span>
+					<span ng-if="!role.iProperties.responsible">-</span>
+					<span ng-if="role.iProperties.accountable">A</span>
+					<span ng-if="!role.iProperties.accountable">-</span>
+					<span ng-if="role.iProperties.consulted">C</span>
+					<span ng-if="!role.iProperties.consulted">-</span>
+					<span ng-if="role.iProperties.informed">I</span>
+					<span ng-if="!role.iProperties.informed">-</span>
+				</div></td>
+				<td class="matrix-intersection-cell"><div class="cell-role-responsibilitiessingle cell-role-{{role.object_id}} role-{{role.object_id}}-responsibilitiessingle">{{role.iProperties.responsibilitiessingle}}</div></td>
+			</tr>
+		</tbody>
+	</table>
+</div>

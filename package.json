@@ -1,0 +1,21 @@
+{
+  "name": "cwLayoutAngularCustom",
+  "description": "Allow you to create your own layout using AngularJS template",
+  "version": "1.0.0",
+  "main": "cwLayoutAngularCustom.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JGrndn/cwLayoutAngularCustom"
+  },
+  "author": "Jerome GRONDIN",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JGrndn/cwLayoutAngularCustom/issues"
+  },
+  "homepage": "",
+  "wiki": "https://github.com/JGrndn/cwLayoutAngularCustom/wiki",
+  "evolve-version": "4.0 - 4.2"
+}

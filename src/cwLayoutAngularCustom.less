@@ -1,0 +1,33 @@
+@import "../../_mixins";
+@import "../../_variables";
+
+.cwLayoutAngularCustom-intersection-activities-roles{
+	table.cw-grid {
+		th{
+			padding: 10px;
+			font-weight: bold;
+			text-align: center;
+			border-bottom: 1px solid @cwMatrixBorderColor;
+		}
+		td {
+	    text-align: inherit;
+	    border-right: 1px solid @cwMatrixBorderColor;
+	    border-left: 0px solid !important;
+	    padding-top: 10px;
+	    padding-bottom: 10px;
+		}
+		td.cw-row-header {
+			min-width: 100px;
+			text-align: center;
+			padding: 15px;
+		}
+		td.cw-row-header:hover{
+			background-color: @cwMatrixIntersectionBackground;	
+		}
+		tr.content-row:hover{
+			background-color: @cwMatrixIntersectionBackground;			
+		}
+
+
+	}
+}

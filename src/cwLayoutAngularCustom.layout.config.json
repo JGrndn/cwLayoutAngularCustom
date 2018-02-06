@@ -1,0 +1,12 @@
+{
+	"Name": "cw-layout-angular-custom",
+	"DisplayName": "Angular Custom",
+	"Description": "Display a template according the selected template",
+	"JavaScriptClassName": "cwLayoutAngularCustom",
+	"Options":[{
+		"Id": "template-name",
+		"DisplayName": "Template name",
+		"Description": "The name of the angular template to be used (without extension)",
+		"Type":0
+	}]
+}
