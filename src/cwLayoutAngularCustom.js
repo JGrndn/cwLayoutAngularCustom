@@ -11,52 +11,19 @@
     this.drawOneMethod = this.drawOne.bind(this);
     cwApi.registerLayoutForJSActions(this);
     this.layoutsByNodeId = {};
-  };
 
-  cwLayoutAngularCustom.prototype.getTemplatePath = function(folder, templateName) {
-    return cwApi.format('{0}/html/{1}/{2}.ng.html', cwApi.getCommonContentPath(), folder, templateName);
+    this.displayEngine = null;
   };
 
   cwLayoutAngularCustom.prototype.applyJavaScript = function () {
+    if (!this.canDisplayTemplate){
+      return;
+    }
     var that = this, templateName = this.options.CustomOptions['template-name'];
     cwApi.CwAsyncLoader.load('angular', function () {
       var loader = cwApi.CwAngularLoader, templatePath, $container = $('#' + that.domId);
       loader.setup();
-      templatePath = that.getTemplatePath('cwLayoutAngularCustom', templateName);
-      loader.loadControllerWithTemplate('cwLayoutAngularCustom', $container, templatePath, function ($scope) {
-        $scope.getNodeName = function(nodeId){
-          return that.viewSchema.NodesByID[nodeId].NodeName;
-        };
-
-        $scope.getMaxRowspan = function(lst){
-          if (cwApi.isUndefined(lst)){
-            return 1;
-          }
-          return Math.max(lst.length, 1);
-        };
-
-        $scope.getItemDisplayString = function(item){
-          var layoutOptions, getDisplayStringFromLayout = function(layout){
-            return layout.getDisplayItem(item);
-          };
-          if (item.nodeID === that.nodeID){
-            return that.getDisplayItem(item);
-          }
-          if (!that.layoutsByNodeId.hasOwnProperty(item.nodeID)){
-            if (that.viewSchema.NodesByID.hasOwnProperty(item.nodeID)){
-              layoutOptions = that.viewSchema.NodesByID[item.nodeID].LayoutOptions;
-              that.layoutsByNodeId[item.nodeID] = new cwApi.cwLayouts[item.layoutName](layoutOptions, that.viewSchema);
-            } else {
-              return item.name;
-            }
-          }
-          return getDisplayStringFromLayout(that.layoutsByNodeId[item.nodeID]);
-        };
-
-        $scope.data = that.data;
-        $scope.metadata = that.metadata;
-        $scope.htmlData = that.htmlData;
-      });
+      that.displayEngine.displayTemplate(loader, templateName, $container);
     });
   };
 
@@ -67,7 +34,7 @@
 
   cwLayoutAngularCustom.prototype.drawAssociations = function (output, associationTitleText, object) {
     /*jslint unparam:true*/
-    var objectId, associationTargetNode, i, j, child;
+    var objectId, associationTargetNode;
     if (cwApi.isUndefinedOrNull(object) || cwApi.isUndefined(object.associations)) {
       // Is a creation page therefore a real object does not exist
       if (!cwApi.isUndefined(this.mmNode.AssociationsTargetObjectTypes[this.nodeID])) {
@@ -89,22 +56,39 @@
         }
       }
     }
-    this.domId = 'cw-layout-' + this.nodeID;
-    output.push('<div id="', this.domId,'" class="', this.nodeID, " ", this.nodeID, "-", objectId, ' ', this.LayoutName, ' ', this.mmNode.LayoutDrawOne, " ot-", this.mmNode.ObjectTypeScriptName.toLowerCase(), '">');
-    output.push('</div');
 
-    this.metadata = this.getNextNodeIds();
-    this.data = [];
-    this.htmlData = {};
-    for (i = 0; i < associationTargetNode.length; i += 1) {
-      child = associationTargetNode[i];
-      this.data.push(child);
-      this.htmlData[child.object_id] = {};
-      for(j=0; j < this.metadata.length; j+=1){
-        this.htmlData[child.object_id][this.metadata[j]] = this.getLayoutContent(child, this.metadata[j]);
+    var json = {};
+    if (this.options.CustomOptions['template-options'] !== '')
+    {
+      try{
+        json = JSON.parse(this.options.CustomOptions['template-options']);
+      }
+      catch(err){
+        cwApi.notificationManager.addError($.i18n.prop('angularCustom_missingOptions'));
+        return;
       }
     }
-    this.metadata.unshift(this.nodeID);
+    var templateName = this.options.CustomOptions['template-name'];
+    var engine;
+    switch (templateName){
+      case 'RACI':
+        engine = new cwApi.customLibs.cwLayoutAngularCustom.raci(associationTargetNode, json, this);
+        break;
+      case 'IntersectionActivitiesRoles':
+        this.sortDataForIntersectionActivitiesRoles(associationTargetNode);
+        break;
+      default:
+        break;
+    }
+  
+    this.displayEngine = engine;
+    this.displayEngine.drawAssociations();
+
+    this.domId = 'cw-layout-' + this.nodeID;
+    var visible = true ? 'cw-visible' : '';
+    output.push('<div id="', this.domId, '" class="',visible, ' ', this.nodeID, " ", this.nodeID, "-", objectId, ' ', this.LayoutName, ' ', this.mmNode.LayoutDrawOne, " ot-", this.mmNode.ObjectTypeScriptName.toLowerCase(), '">');
+    output.push('</div');
+    this.canDisplayTemplate = true;
   };
 
   cwLayoutAngularCustom.prototype.getNextNodeIds = function() {
@@ -123,6 +107,18 @@
     layout.drawAssociations(output, '', object);
     return output.join('');
   };
+
+  cwLayoutAngularCustom.prototype.sortDataForIntersectionActivitiesRoles = function (associationTargetNode){
+    var i, j, child;
+    for (i = 0; i < associationTargetNode.length; i += 1) {
+      child = associationTargetNode[i];
+      this.data.push(child);
+      this.htmlData[child.object_id] = {};
+      for (j = 0; j < this.metadata.length; j += 1) {
+        this.htmlData[child.object_id][this.metadata[j]] = this.getLayoutContent(child, this.metadata[j]);
+      }
+    }
+  }
 
   cwApi.cwLayouts.cwLayoutAngularCustom = cwLayoutAngularCustom;
 

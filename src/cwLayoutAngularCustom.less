@@ -1,7 +1,7 @@
 @import "../../_mixins";
 @import "../../_variables";
 
-.cwLayoutAngularCustom-intersection-activities-roles{
+.cwLayoutAngularCustom-intersection-activities-roles, .cwLayoutAngularCustom-raci-matrix{
 	table.cw-grid {
 		th{
 			padding: 10px;
@@ -16,16 +16,21 @@
 	    padding-top: 10px;
 	    padding-bottom: 10px;
 		}
-		td.cw-row-header {
+		.cw-row-header {
 			min-width: 100px;
 			text-align: center;
-			padding: 15px;
 		}
-		td.cw-row-header:hover{
+		.cw-row-header:hover{
 			background-color: @cwMatrixIntersectionBackground;	
 		}
 		tr.content-row:hover{
 			background-color: @cwMatrixIntersectionBackground;			
+		}
+		.cw-row-content{
+			text-align: center;
+			div.raci-content{
+				display: inline-block;
+			}
 		}
 
 

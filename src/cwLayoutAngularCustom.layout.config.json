@@ -8,5 +8,10 @@
 		"DisplayName": "Template name",
 		"Description": "The name of the angular template to be used (without extension)",
 		"Type":0
+	},{
+		"Id": "template-options",
+		"DisplayName": "Options",
+		"Description": "Set the options for the layout using the JSON format",
+		"Type":0
 	}]
 }
