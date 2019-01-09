@@ -7,9 +7,9 @@
   var engine = function (associationTargetNode, options, layout) {
     cwApi.extend(this, cwApi.customLibs.cwLayoutAngularCustom.displayEngine, associationTargetNode, options, layout);
     this.output = {
-      metadata : layout.getNextNodeIds(),
-      data : [],
-      htmlData : {}
+      metadata: layout.getNextNodeIds(),
+      data: [],
+      htmlData: {}
     };
   };
 
@@ -17,11 +17,11 @@
     $scope.data = this.output.data;
     $scope.customColumns = this.output.linkedObjects;
     $scope.stdColumns = this.output.columns;
-    $scope.HasIntermediateLevel = this.options.HasIntermediateLevel;
+    $scope.HasIntermediateLevel = (this.options.IntermediateId) ? true : false;
   };
 
   engine.prototype.drawAssociations = function () {
-    if (this.options.HasIntermediateLevel){
+    if (this.options.IntermediateId) {
       this.drawForIntermediate(this.data);
     } else {
       this.drawForDirect(this.data);
@@ -29,10 +29,10 @@
     this.output.metadata.unshift(this.layout.nodeID);
   };
 
-  function getItemInArray(arr, item){
-    var i=0, foundItem = null;
-    for(i=0; i<arr.length; i+=1){
-      if (item.object_id === arr[i].object_id && item.objectTypeScriptName === arr[i].objectTypeScriptName){
+  function getItemInArray(arr, item) {
+    var i = 0, foundItem = null;
+    for (i = 0; i < arr.length; i += 1) {
+      if (item.object_id === arr[i].object_id && item.objectTypeScriptName === arr[i].objectTypeScriptName) {
         foundItem = arr[i];
         break;
       }
@@ -40,13 +40,13 @@
     return foundItem;
   }
 
-  engine.prototype.drawForIntermediate = function(items){
-    var i=0, j=0, data = [], obj, child, nodeId;
+  engine.prototype.drawForIntermediate = function (items) {
+    var i = 0, j = 0, data = [], obj, child, nodeId;
     nodeId = this.options.IntermediateId;
-    for(i=0; i<items.length; i+=1){
+    for (i = 0; i < items.length; i += 1) {
       obj = items[i];
       obj.rowSpan = obj.associations[nodeId].length;
-      for(j=0; j<obj.associations[nodeId].length; j+=1){
+      for (j = 0; j < obj.associations[nodeId].length; j += 1) {
         child = obj.associations[nodeId][j];
         child.parent = obj;
         data.push(child);
@@ -55,15 +55,15 @@
     this.drawForDirect(data);
   };
 
-  engine.prototype.drawForDirect = function(items){
-    var i=0, j=0, k=0, obj, linkedObjects = [], columns = [], data = [];
-    for(i=0; i<items.length; i+=1){
+  engine.prototype.drawForDirect = function (items) {
+    var i = 0, j = 0, k = 0, obj, linkedObjects = [], columns = [], data = [];
+    for (i = 0; i < items.length; i += 1) {
       obj = items[i];
-      for(j=0; j<this.options.CustomColumns.length; j+=1){
-        if(obj.associations.hasOwnProperty(this.options.CustomColumns[j].NodeId)){
-          for(k=0; k<obj.associations[this.options.CustomColumns[j].NodeId].length; k+=1){
+      for (j = 0; j < this.options.CustomColumns.length; j += 1) {
+        if (obj.associations.hasOwnProperty(this.options.CustomColumns[j].NodeId)) {
+          for (k = 0; k < obj.associations[this.options.CustomColumns[j].NodeId].length; k += 1) {
             var child = getItemInArray(linkedObjects, obj.associations[this.options.CustomColumns[j].NodeId][k]);
-            if (child === null){
+            if (child === null) {
               child = obj.associations[this.options.CustomColumns[j].NodeId][k];
               child.customId = child.objectTypeScriptName + '|' + child.object_id;
               linkedObjects.push(child);
@@ -72,22 +72,22 @@
         }
       }
     }
-    
-    for(i=0; i<this.options.Columns.length; i+=1){
+
+    for (i = 0; i < this.options.Columns.length; i += 1) {
       columns.push(this.options.Columns[i].NodeId);
     }
     this.output.linkedObjects = linkedObjects;
     this.output.columns = columns;
 
-    for(i=0; i<items.length; i+=1){
+    for (i = 0; i < items.length; i += 1) {
       obj = items[i];
       obj.customColumns = {};
-      for(j=0; j<this.output.linkedObjects.length; j+=1){
+      for (j = 0; j < this.output.linkedObjects.length; j += 1) {
         var tgt = this.output.linkedObjects[j];
         var result = [];
-        for(k=0; k<this.options.CustomColumns.length; k+=1){
+        for (k = 0; k < this.options.CustomColumns.length; k += 1) {
           var col = this.options.CustomColumns[k];
-          if (getItemInArray(obj.associations[col.NodeId], this.output.linkedObjects[j]) !== null){
+          if (getItemInArray(obj.associations[col.NodeId], this.output.linkedObjects[j]) !== null) {
             result.push(col.Content);
           }
         }
