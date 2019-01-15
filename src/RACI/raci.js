@@ -18,6 +18,7 @@
     $scope.customColumns = this.output.linkedObjects;
     $scope.stdColumns = this.output.columns;
     $scope.HasIntermediateLevel = (this.options.IntermediateId) ? true : false;
+    $scope.headers = (this.options.IntermediateId) ? [this.layout.nodeID, this.options.IntermediateId] : [this.layout.nodeID];
   };
 
   engine.prototype.drawAssociations = function () {
