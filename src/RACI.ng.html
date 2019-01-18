@@ -1,19 +1,22 @@
 <div ng-controller="cwLayoutAngularCustom" class="cwLayoutAngularCustom cwLayoutAngularCustom-raci-matrix cw-visible">
-	<div class="no-data" ng-if="data.length == 0 || (customColumns.length == 0 && stdColumns.length == 0)">No data to be
-		displayed</div>
+	<div class="no-data" ng-if="data.length == 0 || (customColumns.length == 0 && stdColumns.length == 0)">No data to be displayed</div>
+	<div class="cwLayoutAngularCustom-clipboard cw-hidden"><textarea id="clipboard-input-{{layoutId}}" ng-model="clipboard.value"></textarea></div>
+	<div class="btn-action-container">
+		<div class="btn-clipboard btn page-action" ng-click="clipboard.copy()"><i class="fa fa-clipboard"></i></div>
+	</div>
 	<div class="container" ng-if="!HasIntermediateLevel">
 		<table class="cw-grid" ng-if="data.length != 0 && (customColumns.length != 0 || stdColumns.length != 0)">
 			<thead>
 				<tr class="header">
 					<th class="cw-header cw-row-header cw-column-header empty-header" ng-repeat="x in headers" ng-bind-html="getNodeName(x)"></th>
-					<th class="cw-header cw-column-header" ng-repeat="x in customColumns | orderBy:'name'" ng-bind-html="getItemDisplayString(x)"></th>
+					<th class="cw-header cw-column-header" ng-repeat="x in customColumns" ng-bind-html="getItemDisplayString(x)"></th>
 					<th class="cw-header cw-column-header" ng-repeat="x in stdColumns" ng-bind-html="getNodeName(x)"></th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr class="content-row" ng-repeat="x in data">
 					<td class="cw-header cw-row-header" ng-bind-html="getItemDisplayString(x)"></td>
-					<td class="cw-content cw-row-content" ng-repeat="col in customColumns | orderBy:'name'">
+					<td class="cw-content cw-row-content" ng-repeat="col in customColumns">
 						<div class="raci-content" ng-repeat="raci in x.customColumns[col.customId]">{{raci}}</div>
 					</td>
 					<td class="cw-content cw-row-content" ng-repeat="col in stdColumns">
@@ -32,16 +35,15 @@
 			<thead>
 				<tr class="header">
 					<th class="cw-header cw-row-header cw-column-header empty-header" ng-repeat="x in headers" ng-bind-html="getNodeName(x)"></th>
-					<th class="cw-header cw-column-header" ng-repeat="x in customColumns | orderBy:'name'" ng-bind-html="getItemDisplayString(x)"></th>
+					<th class="cw-header cw-column-header" ng-repeat="x in customColumns" ng-bind-html="getItemDisplayString(x)"></th>
 					<th class="cw-header cw-column-header" ng-repeat="x in stdColumns" ng-bind-html="getNodeName(x)"></th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr class="content-row" ng-repeat="x in data">
-					<td class="cw-header cw-row-header" ng-if="x.parent != data[$index-1].parent" rowspan="{{x.parent.rowSpan}}"
-					 ng-bind-html="getItemDisplayString(x.parent)"></td>
+					<td class="cw-header cw-row-header" ng-if="x.parent != data[$index-1].parent" rowspan="{{x.parent.rowSpan}}" ng-bind-html="getItemDisplayString(x.parent)"></td>
 					<td class="cw-header cw-row-header" ng-bind-html="getItemDisplayString(x)"></td>
-					<td class="cw-content cw-row-content" ng-repeat="col in customColumns | orderBy:'name'">
+					<td class="cw-content cw-row-content" ng-repeat="col in customColumns">
 						<div class="raci-content" ng-repeat="raci in x.customColumns[col.customId]">{{raci}}</div>
 					</td>
 					<td class="cw-content cw-row-content" ng-repeat="col in stdColumns">

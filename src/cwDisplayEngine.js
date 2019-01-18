@@ -15,36 +15,47 @@
   };
 
 
-  engine.prototype.executeTemplate = function($scope){
+  engine.prototype.executeTemplate = function ($scope) {
   };
 
-  engine.prototype.drawAssociations = function(){
+  engine.prototype.drawAssociations = function () {
   };
 
-  engine.prototype.displayTemplate = function(loader, templateName, $container){
+  engine.prototype.getNodeName = function(nodeId){
+    return this.layout.viewSchema.NodesByID[nodeId].NodeName;
+  };
+
+  engine.prototype.getItemDisplayString = function(item, labelOnly){
+    var layoutOptions, getDisplayStringFromLayout = function (l) {
+      if (labelOnly){
+        return l.displayProperty.getDisplayString(item);
+      }
+      return l.getDisplayItem(item);
+      /* if (item.nodeID === this.layout.nodeID) {
+        return this.layout.getDisplayItem(item);
+      } */
+    };
+    if (!this.layout.layoutsByNodeId.hasOwnProperty(item.nodeID)) {
+      if (this.layout.viewSchema.NodesByID.hasOwnProperty(item.nodeID)) {
+        layoutOptions = this.layout.viewSchema.NodesByID[item.nodeID].LayoutOptions;
+        this.layout.layoutsByNodeId[item.nodeID] = new cwApi.cwLayouts[item.layoutName](layoutOptions, this.layout.viewSchema);
+      } else {
+        return item.name;
+      }
+    }
+    return getDisplayStringFromLayout(this.layout.layoutsByNodeId[item.nodeID]);
+  };
+
+  engine.prototype.displayTemplate = function (loader, templateName, $container) {
     var that = this, templatePath = this.getTemplatePath(templateName);
 
     loader.loadControllerWithTemplate('cwLayoutAngularCustom', $container, templatePath, function ($scope) {
-      $scope.getNodeName = function (nodeId) {
-        return that.layout.viewSchema.NodesByID[nodeId].NodeName;
+      $scope.layoutId = that.layout.nodeID;
+      $scope.getNodeName = function(nodeId){
+        return that.getNodeName(nodeId);
       };
-
-      $scope.getItemDisplayString = function (item) {
-        var layoutOptions, getDisplayStringFromLayout = function (l) {
-          return l.getDisplayItem(item);
-        };
-        if (item.nodeID === that.layout.nodeID) {
-          return that.layout.getDisplayItem(item);
-        }
-        if (!that.layout.layoutsByNodeId.hasOwnProperty(item.nodeID)) {
-          if (that.layout.viewSchema.NodesByID.hasOwnProperty(item.nodeID)) {
-            layoutOptions = that.layout.viewSchema.NodesByID[item.nodeID].LayoutOptions;
-            that.layout.layoutsByNodeId[item.nodeID] = new cwApi.cwLayouts[item.layoutName](layoutOptions, that.layout.viewSchema);
-          } else {
-            return item.name;
-          }
-        }
-        return getDisplayStringFromLayout(that.layout.layoutsByNodeId[item.nodeID]);
+      $scope.getItemDisplayString = function(item){
+        return that.getItemDisplayString(item);
       };
       that.executeTemplate($scope);
 

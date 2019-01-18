@@ -2,7 +2,13 @@
 @import "../../_variables";
 
 .cwLayoutAngularCustom-intersection-activities-roles, .cwLayoutAngularCustom-raci-matrix{
+	div.btn-action-container{
+		float: right;
+	}
 	table.cw-grid {
+		col.empty-header{
+			min-width:300px;
+		}
 		th{
 			padding: 10px;
 			font-weight: bold;
@@ -16,9 +22,12 @@
 	    padding-top: 10px;
 	    padding-bottom: 10px;
 		}
-		.cw-row-header {
+		.cw-column-header {
 			min-width: 100px;
 			text-align: center;
+		}
+		.cw-row-header{
+			min-width: 200px;
 		}
 		.cw-row-header:hover{
 			background-color: @cwMatrixIntersectionBackground;	

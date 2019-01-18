@@ -1,1 +1,2 @@
 angularCustom_missingOptions = Please check JSON options
+raci_matrix_dataCopiedToClipBoard = Data copied into clipboard

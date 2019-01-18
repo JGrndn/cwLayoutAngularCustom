@@ -1,1 +1,2 @@
 angularCustom_missingOptions = Merci de vérifier les options du template
+raci_matrix_dataCopiedToClipBoard = Les données ont été copiées avec succès
