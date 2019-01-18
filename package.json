@@ -1,7 +1,7 @@
 {
   "name": "cwLayoutAngularCustom",
   "description": "Allow you to create your own layout using AngularJS template",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "main": "cwLayoutAngularCustom.js",
   "scripts": {
     "test": ""
