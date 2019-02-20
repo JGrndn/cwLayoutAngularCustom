@@ -18,13 +18,13 @@
 
 
 
-  <link crossorigin="anonymous" media="all" integrity="sha512-pWLt6abkYhNeAHaDrPVG0yXCtIGRuCkwSUqQpsyN6smAIpIt+Iuq2IZKmoH9l3Cy/9ZnjvVrFZnvFFjGiqE3EA==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-a3b8a10d4a9e37a78f033ef4a4f525f5.css" />
-  <link crossorigin="anonymous" media="all" integrity="sha512-0KwMciF/IssfN97Xi/g2LgfCPNFp+6Nef1Isih+SpsCBLpqTkmT5h6NwmJ54tSn7l3hOmolOAYj5kS/hUI79gg==" rel="stylesheet" href="https://github.githubassets.com/assets/github-4b08bc3ddfd467485583696085f5960e.css" />
-  
-  
-  <link crossorigin="anonymous" media="all" integrity="sha512-L+Xfjk72/sIPS5T8Z8Wy/+/78ngrN7jAjVpE5Zoo2KfZYqr9s8p6selV7sLydYrh0Y3Pu02CuEa7uuq70RjSxg==" rel="stylesheet" href="https://github.githubassets.com/assets/site-278e4176d194ae782983c71f1f767503.css" />
-  
-  
+  <link crossorigin="anonymous" media="all" integrity="sha512-KYH8zRCvGYQoVsdDKgYaJRXDN9CwQu0YkPVgbKm4cOiqLAxNisg2Kjex6tfrEB3yTAwtXcFY/sxBVj/3IkIiqg==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-a70126cbff30372f13f599b76353080b.css" />
+  <link crossorigin="anonymous" media="all" integrity="sha512-TmRm4ZOpoDJZ3T1VQ4RJdgLR/sRmpldhsaYgRq7DQvyoj0l6PyRzBm5mehB2zwYXOOuUcqDqm5ep3glspkN0aA==" rel="stylesheet" href="https://github.githubassets.com/assets/site-abcda8c311eff186ca592264c4f2b084.css" />
+    <link crossorigin="anonymous" media="all" integrity="sha512-oE0cb3dq4/GWUOGEHwbrPrM8Q89jwhzagU63LSmshTOoyinZ7B0PHQT15FGWqX7EcTEFD0eOGjgwmwRz+uTbGg==" rel="stylesheet" href="https://github.githubassets.com/assets/github-3882572db3c1f0170c31041d9de0bb5e.css" />
+    
+    
+    
+    
 
   <meta name="viewport" content="width=device-width">
   
@@ -41,7 +41,7 @@
   
   <meta name="pjax-timeout" content="1000">
   
-  <meta name="request-id" content="49C0:40799:1EB1A14:2E94305:5C41E959" data-pjax-transient>
+  <meta name="request-id" content="BFEC:685C:306E4D:588547:5C6D298D" data-pjax-transient>
 
 
   
@@ -52,7 +52,7 @@
     <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
     <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
 
-  <meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="49C0:40799:1EB1A14:2E94305:5C41E959" /><meta name="octolytics-dimension-region_edge" content="ams" /><meta name="octolytics-dimension-region_render" content="iad" />
+  <meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="BFEC:685C:306E4D:588547:5C6D298D" /><meta name="octolytics-dimension-region_edge" content="iad" /><meta name="octolytics-dimension-region_render" content="iad" />
 <meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;" data-pjax-transient="true" />
 
 
@@ -70,13 +70,13 @@
     <meta name="user-login" content="">
 
       <meta name="expected-hostname" content="github.com">
-    <meta name="js-proxy-site-detection-payload" content="ZWFhZGI5NDg2OTNkMmZjYTVkZGM5OGZiYjA3NzQwOTk2MjkwZGFmMWNmYzAyYjE5ZGRjZTkwNTAyZGU4Y2ViNHx7InJlbW90ZV9hZGRyZXNzIjoiODkuOTAuMTU4LjEwOCIsInJlcXVlc3RfaWQiOiI0OUMwOjQwNzk5OjFFQjFBMTQ6MkU5NDMwNTo1QzQxRTk1OSIsInRpbWVzdGFtcCI6MTU0NzgyMzQ1MCwiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
+    <meta name="js-proxy-site-detection-payload" content="OTdhNTczM2VjMDFjNTNmMGE5OTczOTU3ZGQyN2FjYzc2YWVmMjZkNDg4MGUzYWUwMDQ0OThiNzRhMmM0N2ZiYXx7InJlbW90ZV9hZGRyZXNzIjoiMTU3LjE2NC4yMjIuMTk3IiwicmVxdWVzdF9pZCI6IkJGRUM6Njg1QzozMDZFNEQ6NTg4NTQ3OjVDNkQyOThEIiwidGltZXN0YW1wIjoxNTUwNjU3OTM0LCJob3N0IjoiZ2l0aHViLmNvbSJ9">
 
-    <meta name="enabled-features" content="UNIVERSE_BANNER,MARKETPLACE_PLAN_RESTRICTION_EDITOR">
+    <meta name="enabled-features" content="UNIVERSE_BANNER,MARKETPLACE_PLAN_RESTRICTION_EDITOR,MARKETPLACE_BROWSING_V2">
 
-  <meta name="html-safe-nonce" content="943f153cf3398f77fbaee3b6c58feff202d41272">
+  <meta name="html-safe-nonce" content="66dbde8f1ec2579053f38d2c282b01f253b99b9a">
 
-  <meta http-equiv="x-pjax-version" content="3cfb62080e96f14d64dde87f58c32e82">
+  <meta http-equiv="x-pjax-version" content="46a84a98793b68d0972fce919a93870f">
   
 
       <link href="https://github.com/JGrndn/cwLayoutAngularCustom/commits/master.atom" rel="alternate" title="Recent Commits to cwLayoutAngularCustom:master" type="application/atom+xml">
@@ -97,6 +97,7 @@
   <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://github.githubassets.com/favicon.ico">
 
 <meta name="theme-color" content="#1e2327">
+
 
 
 
@@ -148,7 +149,7 @@
                       <li class="edge-item-fix"><a href="/features/code-review/" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Code review">Code review</a></li>
                       <li class="edge-item-fix"><a href="/features/project-management/" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Project management">Project management</a></li>
                       <li class="edge-item-fix"><a href="/features/integrations" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Integrations">Integrations</a></li>
-                      <li class="edge-item-fix"><a href="/features/actions" class="py-2 lh-condensed-ultra d-block link-gray" data-ga-click="(Logged out) Header, go to Actions">Actions</a>
+                      <li class="edge-item-fix"><a href="/features/actions" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Actions">Actions</a>
                       <li class="edge-item-fix"><a href="/features#team-management" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Team management">Team management</a></li>
                       <li class="edge-item-fix"><a href="/features#social-coding" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Social coding">Social coding</a></li>
                       <li class="edge-item-fix"><a href="/features#documentation" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Documentation">Documentation</a></li>
@@ -254,7 +255,7 @@
           aria-autocomplete="list"
           aria-controls="jump-to-results"
           aria-label="Search"
-          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=TBZTvp+q2Q2VTX54MuTZkISFbhNg6AZFnrrTYh5HlXtrxJtuQKEHQrbTFiBvOHhfSy3B4alravfXbcoG0XmHvg=="
+          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=5to5wjEUFDB7k3fSDFADlTlpcecGrchTS1MaAnMgRIFmK1hfdipGeyXU6ig5zyHRsqj1CiyGO9RSpDdJoyiHgQ=="
           spellcheck="false"
           autocomplete="off"
           >
@@ -410,6 +411,7 @@
     <div class="repohead-details-container clearfix container">
 
       <ul class="pagehead-actions">
+
   <li>
       <a href="/login?return_to=%2FJGrndn%2FcwLayoutAngularCustom"
     class="btn btn-sm btn-with-count tooltipped tooltipped-s"
@@ -497,7 +499,7 @@
     <a data-hotkey="g b" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /JGrndn/cwLayoutAngularCustom/projects" href="/JGrndn/cwLayoutAngularCustom/projects">
       <svg class="octicon octicon-project" viewBox="0 0 15 16" version="1.1" width="15" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
       Projects
-      <span class="Counter" >0</span>
+      <span class="Counter" >1</span>
 </a>
 
 
@@ -510,7 +512,6 @@
 
 
   </div>
-
 <div class="container new-discussion-timeline experiment-repo-nav  ">
   <div class="repository-content ">
 
@@ -519,12 +520,12 @@
       <div class="signup-prompt-bg rounded-1">
       <div class="signup-prompt p-4 text-center mb-4 rounded-1">
         <div class="position-relative">
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/site/dismiss_signup_prompt" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="GoVDf4slrariMIoN8c4jtUYrolCZopRIcqMJkmbimaBoiZ6W8Pte/6yTDl+3jkayOYhrSppd2M15LWgDajvjRA==" />
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/site/dismiss_signup_prompt" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="MUShYs058pK/CCwgY1PEiFTFGK6KcBKbVGeHyL2dYGmBnKZ5tIlsxTR1xv9OZFON2bMBiMSD8Cp+tOD7H/cLKQ==" />
             <button type="submit" class="position-absolute top-0 right-0 btn-link link-gray" data-ga-click="(Logged out) Sign up prompt, clicked Dismiss, text:dismiss">
               Dismiss
             </button>
 </form>          <h3 class="pt-2">Join GitHub today</h3>
-          <p class="col-6 mx-auto">GitHub is home to over 28 million developers working together to host and review code, manage projects, and build software together.</p>
+          <p class="col-6 mx-auto">GitHub is home to over 31 million developers working together to host and review code, manage projects, and build software together.</p>
           <a class="btn btn-primary" href="/join?source=prompt-code" data-ga-click="(Logged out) Sign up prompt, clicked Sign up, text:sign-up">Sign up</a>
         </div>
       </div>
@@ -549,7 +550,7 @@
           <a data-pjax href="/JGrndn/cwLayoutAngularCustom/commits/master">
               <svg class="octicon octicon-history" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 13H6V6h5v2H8v5zM7 1C4.81 1 2.87 2.02 1.59 3.59L0 2v4h4L2.5 4.5C3.55 3.17 5.17 2.3 7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-.34.03-.67.09-1H.08C.03 7.33 0 7.66 0 8c0 3.86 3.14 7 7 7s7-3.14 7-7-3.14-7-7-7z"/></svg>
               <span class="num text-emphasized">
-                10
+                13
               </span>
               commits
           </a>
@@ -576,13 +577,15 @@
 
 
           <li>
-              <include-fragment src="/JGrndn/cwLayoutAngularCustom/contributors_size">
-                <a href="/JGrndn/cwLayoutAngularCustom/graphs/contributors">
-                  <svg class="octicon octicon-organization" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 12.999c0 .439-.45 1-1 1H7.995c-.539 0-.994-.447-.995-.999H1c-.54 0-1-.561-1-1 0-2.634 3-4 3-4s.229-.409 0-1c-.841-.621-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.442.58 2.5 3c.058 2.41-.159 2.379-1 3-.229.59 0 1 0 1s1.549.711 2.42 2.088C9.196 9.369 10 8.999 10 8.999s.229-.409 0-1c-.841-.62-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.437.581 2.495 3c.059 2.41-.158 2.38-1 3-.229.59 0 1 0 1s3.005 1.366 3.005 4z"/></svg>
-                  <span class="num text-emphasized"></span>
-                  Fetching contributors
-                </a>
-</include-fragment>          </li>
+              <a href="/JGrndn/cwLayoutAngularCustom/graphs/contributors">
+  <svg class="octicon octicon-organization" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 12.999c0 .439-.45 1-1 1H7.995c-.539 0-.994-.447-.995-.999H1c-.54 0-1-.561-1-1 0-2.634 3-4 3-4s.229-.409 0-1c-.841-.621-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.442.58 2.5 3c.058 2.41-.159 2.379-1 3-.229.59 0 1 0 1s1.549.711 2.42 2.088C9.196 9.369 10 8.999 10 8.999s.229-.409 0-1c-.841-.62-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.437.581 2.495 3c.059 2.41-.158 2.38-1 3-.229.59 0 1 0 1s3.005 1.366 3.005 4z"/></svg>
+    <span class="num text-emphasized">
+      1
+    </span>
+    contributor
+</a>
+
+          </li>
 
       </ul>
 
@@ -592,7 +595,7 @@
                 <a href="/JGrndn/cwLayoutAngularCustom/search?l=javascript"  data-ga-click="Repository, language stats search click, location:repo overview">
                   <span class="color-block language-color" style="background-color:#f1e05a;"></span>
                   <span class="lang">JavaScript</span>
-                  <span class="percent">63.1%</span>
+                  <span class="percent">62.5%</span>
                 </a>
             </li>
             <li>
@@ -606,7 +609,7 @@
                 <a href="/JGrndn/cwLayoutAngularCustom/search?l=css"  data-ga-click="Repository, language stats search click, location:repo overview">
                   <span class="color-block language-color" style="background-color:#563d7c;"></span>
                   <span class="lang">CSS</span>
-                  <span class="percent">4.4%</span>
+                  <span class="percent">5.0%</span>
                 </a>
             </li>
           </ol>
@@ -616,9 +619,9 @@
   </div>
 
     <button type="button" class="d-flex p-0 repository-lang-stats-graph js-toggle-lang-stats" title="Click for language details" data-ga-click="Repository, language bar stats toggle, location:repo overview">
-      <span class="language-color" aria-label="JavaScript 63.1%" style="width:63.1%; background-color:#f1e05a;" itemprop="keywords">JavaScript</span>
+      <span class="language-color" aria-label="JavaScript 62.5%" style="width:62.5%; background-color:#f1e05a;" itemprop="keywords">JavaScript</span>
       <span class="language-color" aria-label="HTML 32.5%" style="width:32.5%; background-color:#e34c26;" itemprop="keywords">HTML</span>
-      <span class="language-color" aria-label="CSS 4.4%" style="width:4.4%; background-color:#563d7c;" itemprop="keywords">CSS</span>
+      <span class="language-color" aria-label="CSS 5.0%" style="width:5.0%; background-color:#563d7c;" itemprop="keywords">CSS</span>
   </button>
 
 
@@ -628,24 +631,21 @@
 
   <div class="file-navigation in-mid-page d-flex flex-items-start">
   
-<div class="select-menu branch-select-menu js-menu-container js-select-menu float-left js-load-contents"
-  data-contents-url="/JGrndn/cwLayoutAngularCustom/ref-list/master?source_action=disambiguate&amp;source_controller=files">
-  <button class="btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
-    
-    type="button" aria-label="Switch branches or tags" aria-expanded="false" aria-haspopup="true">
+<details class="details-reset details-overlay select-menu branch-select-menu float-left">
+  <summary class="btn btn-sm select-menu-button css-truncate"
+           data-hotkey="w"
+           
+           title="Switch branches or tags">
     <i>Branch:</i>
-    <span class="js-select-button css-truncate-target">master</span>
-  </button>
+    <span class="css-truncate-target">master</span>
+  </summary>
 
-  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax>
-    <div class="select-menu-modal">
-      <div class="js-select-menu-deferred-content"></div>
-      <div class="select-menu-loading-overlay anim-pulse">
-        <svg height="32" class="octicon octicon-octoface" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M14.7 5.34c.13-.32.55-1.59-.13-3.31 0 0-1.05-.33-3.44 1.3-1-.28-2.07-.32-3.13-.32s-2.13.04-3.13.32c-2.39-1.64-3.44-1.3-3.44-1.3-.68 1.72-.26 2.99-.13 3.31C.49 6.21 0 7.33 0 8.69 0 13.84 3.33 15 7.98 15S16 13.84 16 8.69c0-1.36-.49-2.48-1.3-3.35zM8 14.02c-3.3 0-5.98-.15-5.98-3.35 0-.76.38-1.48 1.02-2.07 1.07-.98 2.9-.46 4.96-.46 2.07 0 3.88-.52 4.96.46.65.59 1.02 1.3 1.02 2.07 0 3.19-2.68 3.35-5.98 3.35zM5.49 9.01c-.66 0-1.2.8-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.54-1.78-1.2-1.78zm5.02 0c-.66 0-1.2.79-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.53-1.78-1.2-1.78z"/></svg>
-      </div>
-    </div>
-  </div>
-</div>
+  <details-menu class="select-menu-modal position-absolute" style="z-index: 99;" src="/JGrndn/cwLayoutAngularCustom/ref-list/master?source_action=disambiguate&amp;source_controller=files" preload>
+    <include-fragment class="select-menu-loading-overlay anim-pulse">
+      <svg height="32" class="octicon octicon-octoface" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M14.7 5.34c.13-.32.55-1.59-.13-3.31 0 0-1.05-.33-3.44 1.3-1-.28-2.07-.32-3.13-.32s-2.13.04-3.13.32c-2.39-1.64-3.44-1.3-3.44-1.3-.68 1.72-.26 2.99-.13 3.31C.49 6.21 0 7.33 0 8.69 0 13.84 3.33 15 7.98 15S16 13.84 16 8.69c0-1.36-.49-2.48-1.3-3.35zM8 14.02c-3.3 0-5.98-.15-5.98-3.35 0-.76.38-1.48 1.02-2.07 1.07-.98 2.9-.46 4.96-.46 2.07 0 3.88-.52 4.96.46.65.59 1.02 1.3 1.02 2.07 0 3.19-2.68 3.35-5.98 3.35zM5.49 9.01c-.66 0-1.2.8-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.54-1.78-1.2-1.78zm5.02 0c-.66 0-1.2.79-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.53-1.78-1.2-1.78z"/></svg>
+    </include-fragment>
+  </details-menu>
+</details>
 
 
         <button type="button" class="btn btn-sm disabled tooltipped tooltipped-n new-pull-request-btn" aria-label="You must be signed in to create a pull request">
@@ -746,7 +746,7 @@
 
   
 
-<include-fragment src="/JGrndn/cwLayoutAngularCustom/tree-commit/191db24b1b0a66997f2351b2813cde56b5602815" class="commit-tease commit-loader">
+<include-fragment src="/JGrndn/cwLayoutAngularCustom/tree-commit/ddbd3445ba12ac7af1a6029234eed1e724cc5840" class="commit-tease commit-loader">
   <div class="blank loader-loading">
       <img alt="" class="loader" src="https://github.githubassets.com/images/spinners/octocat-spinner-32-EAF2F5.gif" width="16" height="16" />
       Fetching latest commit…
@@ -757,8 +757,8 @@
 </include-fragment>
 
 
-<div class="file-wrap">
-  <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/JGrndn/cwLayoutAngularCustom/tree/191db24b1b0a66997f2351b2813cde56b5602815">Permalink</a>
+<include-fragment class="file-wrap" src="/JGrndn/cwLayoutAngularCustom/file-list/master">
+  <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/JGrndn/cwLayoutAngularCustom/tree/ddbd3445ba12ac7af1a6029234eed1e724cc5840">Permalink</a>
 
   <table class="files js-navigation-container js-active-navigation-container" data-pjax>
     <thead>
@@ -783,15 +783,14 @@
             <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
           </td>
           <td class="content">
-            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="dist" id="2a6d07eef8b10b84129b42424ed99327-53ae4c94a89d1cd9fcbe7a4a8d42f17e39f4f373" href="/JGrndn/cwLayoutAngularCustom/tree/master/dist">dist</a></span>
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="dist" id="2a6d07eef8b10b84129b42424ed99327-ea088a49542d2443104fd263c23cd5e31f7914aa" href="/JGrndn/cwLayoutAngularCustom/tree/master/dist">dist</a></span>
           </td>
           <td class="message">
             <span class="css-truncate css-truncate-target">
-                  <a data-pjax="true" title="Package 1.1.0" class="message" href="/JGrndn/cwLayoutAngularCustom/commit/17b9d3e463c2c552946f271916b41eb436529fb5">Package 1.1.0</a>
             </span>
           </td>
           <td class="age">
-            <span class="css-truncate css-truncate-target"><time-ago datetime="2019-01-15T11:00:03Z">Jan 15, 2019</time-ago></span>
+            <span class="css-truncate css-truncate-target"></span>
           </td>
         </tr>
         <tr class="js-navigation-item">
@@ -800,15 +799,14 @@
             <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
           </td>
           <td class="content">
-            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="help" id="657f8b8da628ef83cf69101b6817150a-9fb02d74a6ea897b85834e3bdea42f929acdecd8" href="/JGrndn/cwLayoutAngularCustom/tree/master/help">help</a></span>
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="help" id="657f8b8da628ef83cf69101b6817150a-ef091d3f011156213dab13fcd0baf1b8664734f4" href="/JGrndn/cwLayoutAngularCustom/tree/master/help">help</a></span>
           </td>
           <td class="message">
             <span class="css-truncate css-truncate-target">
-                  <a data-pjax="true" title="Package 1.1.0" class="message" href="/JGrndn/cwLayoutAngularCustom/commit/17b9d3e463c2c552946f271916b41eb436529fb5">Package 1.1.0</a>
             </span>
           </td>
           <td class="age">
-            <span class="css-truncate css-truncate-target"><time-ago datetime="2019-01-15T11:00:03Z">Jan 15, 2019</time-ago></span>
+            <span class="css-truncate css-truncate-target"></span>
           </td>
         </tr>
         <tr class="js-navigation-item">
@@ -821,11 +819,10 @@
           </td>
           <td class="message">
             <span class="css-truncate css-truncate-target">
-                  <a data-pjax="true" title="1st commit" class="message" href="/JGrndn/cwLayoutAngularCustom/commit/4cbec60f11dd86e005dc23552d9a443e0c317dda">1st commit</a>
             </span>
           </td>
           <td class="age">
-            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-02-06T21:45:12Z">Feb 6, 2018</time-ago></span>
+            <span class="css-truncate css-truncate-target"></span>
           </td>
         </tr>
         <tr class="js-navigation-item">
@@ -834,15 +831,14 @@
             <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
           </td>
           <td class="content">
-            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="src" id="25d902c24283ab8cfbac54dfa101ad31-2e434b629d1615a46c9596451d7290b68f3b4538" href="/JGrndn/cwLayoutAngularCustom/tree/master/src">src</a></span>
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="src" id="25d902c24283ab8cfbac54dfa101ad31-95cae67e40f18cba2e07fe78f96d17ee17d98e06" href="/JGrndn/cwLayoutAngularCustom/tree/master/src">src</a></span>
           </td>
           <td class="message">
             <span class="css-truncate css-truncate-target">
-                  <a data-pjax="true" title="add copy feature" class="message" href="/JGrndn/cwLayoutAngularCustom/commit/191db24b1b0a66997f2351b2813cde56b5602815">add copy feature</a>
             </span>
           </td>
           <td class="age">
-            <span class="css-truncate css-truncate-target"><time-ago datetime="2019-01-18T14:57:03Z">Jan 18, 2019</time-ago></span>
+            <span class="css-truncate css-truncate-target"></span>
           </td>
         </tr>
         <tr class="js-navigation-item">
@@ -855,11 +851,10 @@
           </td>
           <td class="message">
             <span class="css-truncate css-truncate-target">
-                  <a data-pjax="true" title=":neckbeard: Added .gitattributes" class="message" href="/JGrndn/cwLayoutAngularCustom/commit/dbd0efc81bba2ad380e0f02b5dac2626375f6cec"><img class="emoji" title=":neckbeard:" alt=":neckbeard:" src="https://github.githubassets.com/images/icons/emoji/neckbeard.png" height="20" width="20" align="absmiddle"> Added .gitattributes</a>
             </span>
           </td>
           <td class="age">
-            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-02-06T21:44:50Z">Feb 6, 2018</time-ago></span>
+            <span class="css-truncate css-truncate-target"></span>
           </td>
         </tr>
         <tr class="js-navigation-item">
@@ -872,11 +867,10 @@
           </td>
           <td class="message">
             <span class="css-truncate css-truncate-target">
-                  <a data-pjax="true" title="New package" class="message" href="/JGrndn/cwLayoutAngularCustom/commit/fde71c388b8d38a101f2b1cbdd81bcaca507b5b1">New package</a>
             </span>
           </td>
           <td class="age">
-            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-02-06T21:48:26Z">Feb 6, 2018</time-ago></span>
+            <span class="css-truncate css-truncate-target"></span>
           </td>
         </tr>
         <tr class="js-navigation-item">
@@ -889,11 +883,10 @@
           </td>
           <td class="message">
             <span class="css-truncate css-truncate-target">
-                  <a data-pjax="true" title="New package" class="message" href="/JGrndn/cwLayoutAngularCustom/commit/fde71c388b8d38a101f2b1cbdd81bcaca507b5b1">New package</a>
             </span>
           </td>
           <td class="age">
-            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-02-06T21:48:26Z">Feb 6, 2018</time-ago></span>
+            <span class="css-truncate css-truncate-target"></span>
           </td>
         </tr>
         <tr class="js-navigation-item">
@@ -906,11 +899,10 @@
           </td>
           <td class="message">
             <span class="css-truncate css-truncate-target">
-                  <a data-pjax="true" title="New package" class="message" href="/JGrndn/cwLayoutAngularCustom/commit/fde71c388b8d38a101f2b1cbdd81bcaca507b5b1">New package</a>
             </span>
           </td>
           <td class="age">
-            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-02-06T21:48:26Z">Feb 6, 2018</time-ago></span>
+            <span class="css-truncate css-truncate-target"></span>
           </td>
         </tr>
         <tr class="js-navigation-item">
@@ -923,11 +915,10 @@
           </td>
           <td class="message">
             <span class="css-truncate css-truncate-target">
-                  <a data-pjax="true" title="New package" class="message" href="/JGrndn/cwLayoutAngularCustom/commit/fde71c388b8d38a101f2b1cbdd81bcaca507b5b1">New package</a>
             </span>
           </td>
           <td class="age">
-            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-02-06T21:48:26Z">Feb 6, 2018</time-ago></span>
+            <span class="css-truncate css-truncate-target"></span>
           </td>
         </tr>
         <tr class="js-navigation-item">
@@ -936,21 +927,20 @@
             <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
           </td>
           <td class="content">
-            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="package.json" id="b9cfc7f2cdf78a7f4b91a753d10865a2-31fda8ff83f39343885acab9f8b61dd8a54db50e" href="/JGrndn/cwLayoutAngularCustom/blob/master/package.json">package.json</a></span>
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="package.json" id="b9cfc7f2cdf78a7f4b91a753d10865a2-179f9ec40b76640f4a928b9a607fa984e2995593" href="/JGrndn/cwLayoutAngularCustom/blob/master/package.json">package.json</a></span>
           </td>
           <td class="message">
             <span class="css-truncate css-truncate-target">
-                  <a data-pjax="true" title="1.1.0" class="message" href="/JGrndn/cwLayoutAngularCustom/commit/e2d865fcb0f6021bb7f16da28e26b44a63b91fd5">1.1.0</a>
             </span>
           </td>
           <td class="age">
-            <span class="css-truncate css-truncate-target"><time-ago datetime="2019-01-15T10:59:32Z">Jan 15, 2019</time-ago></span>
+            <span class="css-truncate css-truncate-target"></span>
           </td>
         </tr>
     </tbody>
   </table>
 
-</div>
+</include-fragment>
 
 
 
@@ -964,6 +954,7 @@
 
     </div>
   </div>
+  
 
   </div>
 
@@ -971,10 +962,10 @@
 <div class="footer container-lg px-3" role="contentinfo">
   <div class="position-relative d-flex flex-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
     <ul class="list-style-none d-flex flex-wrap ">
-      <li class="mr-3">&copy; 2019 <span title="0.15467s from unicorn-7d8769f5c7-mcs8l">GitHub</span>, Inc.</li>
+      <li class="mr-3">&copy; 2019 <span title="0.18976s from unicorn-99cbbf6d4-6c4n2">GitHub</span>, Inc.</li>
         <li class="mr-3"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
         <li class="mr-3"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
-        <li class="mr-3"><a href="/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li class="mr-3"><a data-ga-click="Footer, go to security, text:security" href="https://github.com/security">Security</a></li>
         <li class="mr-3"><a href="https://githubstatus.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
         <li><a data-ga-click="Footer, go to help, text:help" href="https://help.github.com">Help</a></li>
     </ul>
@@ -1008,10 +999,10 @@
   </div>
 
 
-    <script crossorigin="anonymous" integrity="sha512-Mp0nAOFvmE8PVQP49TPVMbQBLb+lpf3gu9GF1CPqybGGzl/8KEKDTKzuJpxxd5xF8HUi85xKPkssLtVVdLKtlw==" type="application/javascript" src="https://github.githubassets.com/assets/compat-6e5ed2648dae3be3f9358af5732a780f.js"></script>
-    <script crossorigin="anonymous" integrity="sha512-xx5bFEpCTis78HDM45zXGUp0XjJNgfxVJuvXT7CCXCTv1JgICExLtsUhV7HO90M3gLO0j5DA0zkAmMrsLJsFUw==" type="application/javascript" src="https://github.githubassets.com/assets/frameworks-dcdc6bbaaa9ce93ccc296c33ff1f40c3.js"></script>
+    <script crossorigin="anonymous" integrity="sha512-47ZXWJASen/yLysPiEpAb7/WvHBIHIRKo+7W5g0YYFiInTWqpjYBHTpeHut0QWEf51gExNhSEy55XQmxrZ+0xA==" type="application/javascript" src="https://github.githubassets.com/assets/compat-742699bf681282d2e3cf809d2b9de73a.js"></script>
+    <script crossorigin="anonymous" integrity="sha512-yLYTW7SOnRxxogj8zkmFCXPlAdXOWesewGjAgueQUPNG9ACk/bAs6fLtxJS4vuEPSgR0mDJTn+0uF3DLSzoG+Q==" type="application/javascript" src="https://github.githubassets.com/assets/frameworks-e7386fe0dfb42605619f7a70aed3204f.js"></script>
     
-    <script crossorigin="anonymous" async="async" integrity="sha512-6yBG5xUMx+f7ghyX43pTBXBsMle/BZ7yXI6fKp0sDOvJWFybObiNgfbL+uVlepf/bpOQ3Mej4eapc11a4ov43g==" type="application/javascript" src="https://github.githubassets.com/assets/github-158a31c96bc2a801ea9394a5da4d6e50.js"></script>
+    <script crossorigin="anonymous" async="async" integrity="sha512-YKAQBagruVNM5vhISSK+jRSktfucirAokomSwDPGndk1nSbEIOsxxYUFZ5jJV6gjqhHrHzgCSpub48rd4UHQUw==" type="application/javascript" src="https://github.githubassets.com/assets/github-baf2061180e737799047f63fb9ed115e.js"></script>
     
     
     
@@ -1020,16 +1011,6 @@
     <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
     <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
   </div>
-  <div class="facebox" id="facebox" style="display:none;">
-  <div class="facebox-popup">
-    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
-    </div>
-    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
-      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
-    </button>
-  </div>
-</div>
-
   <template id="site-details-dialog">
   <details class="details-reset details-overlay details-overlay-dark lh-default text-gray-dark" open>
     <summary aria-haspopup="dialog" aria-label="Close dialog"></summary>
