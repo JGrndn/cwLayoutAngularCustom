@@ -1,6 +1,6 @@
 <div ng-controller="cwLayoutAngularCustom" class="cwLayoutAngularCustom cwLayoutAngularCustom-raci-matrix cw-visible">
 	<div class="no-data" ng-if="data.length == 0 || (customColumns.length == 0 && stdColumns.length == 0)">No data to be displayed</div>
-	<div class="cwLayoutAngularCustom-clipboard cw-hidden"><textarea id="clipboard-input-{{layoutId}}" ng-model="clipboard.value"></textarea></div>
+	<div class="cwLayoutAngularCustom-clipboard"><textarea id="clipboard-input-{{layoutId}}" ng-model="clipboard.value"></textarea></div>
 	<div class="btn-action-container">
 		<div class="btn-clipboard btn page-action" ng-click="clipboard.copy()"><i class="fa fa-clipboard"></i></div>
 	</div>

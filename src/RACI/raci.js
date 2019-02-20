@@ -15,8 +15,7 @@
     };
   };
 
-  engine.prototype.executeTemplate = function ($scope) {
-    var that = this;
+  engine.prototype.run = function ($scope) {
     $scope.data = this.output.data;
     $scope.customColumns = this.output.linkedObjects;
     $scope.stdColumns = this.output.columns;
@@ -34,6 +33,7 @@
     };
   };
   
+
   engine.prototype.getClipboardValue = function(input){
     var output = [], data = this.arrangeData(input);
     data.forEach(function (row) {
@@ -47,7 +47,7 @@
   };
   
   engine.prototype.arrangeData = function(input){
-    var that = this, header = [], content = []; //[["na\"me10\rname11", 2, 3], ["name2", 4, 5], ["name3", 6, 7], ["name4", 8, 9], ["name5", 10, 11]];
+    var that = this, header = [], content = [];
     // header
     header.push(this.output.headers.map(function(nodeId){
       return that.getNodeName(nodeId);
@@ -83,11 +83,11 @@
     return header.concat(content);
   };
 
-  engine.prototype.drawAssociations = function () {
+  engine.prototype.init = function () {
     if (this.options.IntermediateId){
-      this.drawForIntermediate(this.data);
+      this.drawForIntermediate(this.items);
     } else {
-      this.drawForDirect(this.data);
+      this.drawForDirect(this.items);
     }
     this.output.linkedObjects.sort(function (a, b) {
       return (a.name.toLowerCase() < b.name.toLowerCase()) ? -1 : 1;
